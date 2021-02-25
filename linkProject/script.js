@@ -16,6 +16,7 @@ const threeYearsClasses = {
   religionEva3años:
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=67",
 };
+
 const fourYearsClasses = {
   tutora3años:
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=65",
@@ -28,6 +29,7 @@ const fourYearsClasses = {
   religionEva3años:
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=67",
 };
+
 const fiveYearsClasses = {
   tutora5añosA:
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=76",
@@ -60,13 +62,13 @@ const primeroClasses = {
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=158",
   arts1:
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=159",
-  eduFisica1:
+  educaciónFisica1:
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=161",
   musica1:
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=160",
-  religionCat1:
+  religionCatólica1:
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=163",
-  religionEva1:
+  religionEvangelica1:
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=162",
   valores1:
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=202",
@@ -98,6 +100,7 @@ const segundoClasses = {
   valores2:
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=203",
 };
+
 const terceroClasses = {
   lengua3:
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=173",
@@ -124,6 +127,7 @@ const terceroClasses = {
   valores3:
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=204",
 };
+
 const quartoClasses = {
   lengua4:
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/enrol/index.php?id=118",
@@ -148,6 +152,7 @@ const quartoClasses = {
   valores4:
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/enrol/index.php?id=205",
 };
+
 const quintoClasses = {
   lengua4:
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/enrol/index.php?id=118",
@@ -172,6 +177,7 @@ const quintoClasses = {
   valores4:
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/enrol/index.php?id=205",
 };
+
 const sextoClasses = {
   lengua6:
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=137",
@@ -226,10 +232,10 @@ const compSextoClasses = {
 };
 
 // Element selectors.
+const seccionSelectElement = document.getElementById("seccion");
 const gradoSelectElement = document.getElementById("grado");
-const courseSelectElement = document.getElementById("course");
-const lessonSelectElement = document.getElementById("lesson");
-const courseLinkElement = document.getElementById("course-link");
+const cursoSelectElement = document.getElementById("curso");
+const linkCurso = document.getElementById("link-curso");
 
 // Fill in the objects for each grade section.
 // These are selected by the 2nd selector, in the middle.
@@ -239,6 +245,7 @@ const infantil = {
   fourYears: fourYearsClasses,
   fiveYears: fiveYearsClasses,
 };
+
 const primaria = {
   primero: primeroClasses,
   segundo: segundoClasses,
@@ -258,7 +265,7 @@ const compensatoria = {
 // Fill in the object of the basic grades.
 // These are controlled by the 1st selector, on the left,
 // Then, the selection is passed to the second selector, in the middle.
-const grados = {
+const secciones = {
   infantil: infantil,
   primaria: primaria,
   compensatoria: compensatoria,
@@ -278,30 +285,30 @@ const fillSelect = function (selectElement, data) {
 
 // This is auto loaded when the page loads and fills the first selector.
 document.addEventListener("DOMContentLoaded", function (event) {
-  fillSelect(gradoSelectElement, grados);
+  fillSelect(seccionSelectElement, secciones);
 });
 
 // This is the event listener for the first selector, on the left.
 // It passes its selection data to the second selector, in the middle.
-gradoSelectElement.addEventListener("change", function (event) {
-  fillSelect(courseSelectElement, grados[event.target.value]);
+seccionSelectElement.addEventListener("change", function (event) {
+  fillSelect(gradoSelectElement, secciones[event.target.value]);
 });
 
 // This is the event listener for the second selector, in the middle.
 // It passes its selection data to the third selector, on the right.
-courseSelectElement.addEventListener("change", function (event) {
+gradoSelectElement.addEventListener("change", function (event) {
   fillSelect(
-    lessonSelectElement,
-    grados[gradoSelectElement.value][event.target.value]
+    cursoSelectElement,
+    secciones[seccionSelectElement.value][event.target.value]
   );
 });
 
 // This is the event listener for the third selector, on the right.
 // It passes its selection data to the link a href.
 // This is the element we click to go to the webpage link.
-lessonSelectElement.addEventListener("change", function (event) {
-  courseLinkElement.href =
-    grados[gradoSelectElement.value][courseSelectElement.value][
+cursoSelectElement.addEventListener("change", function (event) {
+  linkCurso.href =
+    secciones[seccionSelectElement.value][gradoSelectElement.value][
       event.target.value
     ];
 });
