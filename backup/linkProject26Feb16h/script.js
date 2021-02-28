@@ -279,16 +279,6 @@ const fillSelect = function (selectElement, data, text) {
     let gradoOption = document.createElement("option");
     gradoOption.value = item;
     gradoOption.text = item.charAt(0).toUpperCase() + item.slice(1);
-
-    for (i = 0; i < gradoOption.text.length; i++) {
-      console.log(gradoOption.text.length);
-      if (gradoOption.text[i] === /[A-Z]/) {
-        console.log(`${gradoOption.text[i]} is capital.`);
-      }
-    }
-    if (/[A-Z]/.test(gradoOption)) {
-      console.log("upper case true");
-    }
     selectElement.add(gradoOption);
   });
 };
