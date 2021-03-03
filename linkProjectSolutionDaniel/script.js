@@ -298,7 +298,6 @@ const fillSelect = function (selectElement, data, text) {
 // This is auto loaded when the page loads and fills the first selector.
 document.addEventListener("DOMContentLoaded", function (event) {
   fillSelect(seccionSelectElement, secciones, "1. Elegir Sección");
-  seccionSelectElement.classList.remove("hide");
 });
 
 // This is the event listener for the first selector, on the left.
@@ -309,9 +308,8 @@ seccionSelectElement.addEventListener("change", function (event) {
     secciones[event.target.value],
     "2. Elegir Grado"
   );
-  seccionChoiceElement = document.getElementById("seccion-choice");
-  seccionChoiceElement.innerText =
-    event.target.value.charAt(0).toUpperCase() + event.target.value.slice(1);
+  seccionChoiceElement = document.getElementById("seccion-choice")
+  seccionChoiceElement.innerText = event.target.value.charAt(0).toUpperCase() + event.target.value.slice(1);
   seccionChoiceElement.classList.remove("hide");
   seccionSelectElement.classList.add("hide");
   gradoSelectElement.classList.remove("hide");
@@ -325,9 +323,8 @@ gradoSelectElement.addEventListener("change", function (event) {
     secciones[seccionSelectElement.value][event.target.value],
     "3. Elegir Curso"
   );
-  gradoChoiceElement = document.getElementById("grado-choice");
-  gradoChoiceElement.innerText =
-    event.target.value.charAt(0).toUpperCase() + event.target.value.slice(1);
+  gradoChoiceElement = document.getElementById("grado-choice")
+  gradoChoiceElement.innerText = event.target.value.charAt(0).toUpperCase() + event.target.value.slice(1);
   gradoChoiceElement.classList.remove("hide");
   gradoSelectElement.classList.add("hide");
   cursoSelectElement.classList.remove("hide");
@@ -341,10 +338,9 @@ cursoSelectElement.addEventListener("change", function (event) {
     secciones[seccionSelectElement.value][gradoSelectElement.value][
       event.target.value
     ];
-  linkCurso.removeAttribute("class");
-  cursoChoiceElement = document.getElementById("curso-choice");
-  cursoChoiceElement.innerText =
-    event.target.value.charAt(0).toUpperCase() + event.target.value.slice(1);
+  cursoChoiceElement = document.getElementById("curso-choice")
+  cursoChoiceElement.innerText = event.target.value.charAt(0).toUpperCase() + event.target.value.slice(1);
   cursoChoiceElement.classList.remove("hide");
   cursoSelectElement.classList.add("hide");
+  linkCurso.classList.remove("hide");
 });

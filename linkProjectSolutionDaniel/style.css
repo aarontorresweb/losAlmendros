@@ -1,0 +1,74 @@
+/* CSS goes here. 😂😂😂 */
+
+body {
+  background-color: rgba(93, 170, 104, 1);
+  /* font-family: Sofia Pro Soft; */
+  font-family: "Montserrat", sans-serif;
+}
+
+#logo {
+  max-width: 100%;
+  padding: 20px;
+  display: block;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+#content {
+  width: 450px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#content select {
+  font-family: "Montserrat", sans-serif;
+  width: 33%;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 10px;
+  border: 2px solid black;
+  background-color: rgba(250, 241, 207, 1);
+}
+
+#choices {
+  width: 450px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.choice {
+  width: 30%;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  padding: 5px;
+  margin: 10px;
+  text-align: center;
+}
+
+#link-curso {
+  display: block;
+  margin-top: 15px;
+  width: 33%;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 10px;
+  border: 2px solid black;
+  background-color: rgba(250, 241, 207, 1);
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  transition: 0.5s;
+}
+#link-curso:hover {
+  opacity: 0.5;
+}
+
+.hide {
+  display: none !important;
+}

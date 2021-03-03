@@ -3,6 +3,10 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
 
     <title>Los Almendros</title>
     <meta
@@ -13,6 +17,7 @@
       name="Aaron Torres and Joe Poisson"
       content="Link Generator Los Almendros"
     />
+
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
@@ -31,9 +36,16 @@
           <p id="curso-choice" class="choice hide">Third</p>
         </div>
       </header>
-      <select name="seccion" id="seccion"></select>
-      <select class="hide" name="grado" id="grado"></select>
-      <select class="hide" name="curso" id="curso"></select>
+      <select name="seccion" id="seccion">
+        <!-- The option texts are created dynamically in JS, so not really needed here.-->
+        <!-- <option value="elegir-seccion">1. Elegir Sección</option> -->
+      </select>
+      <select class="hide" name="grado" id="grado">
+        <!-- <option value="elegir-grado">2. Elegir Grado</option> -->
+      </select>
+      <select class="hide" name="curso" id="curso">
+        <!-- <option value="eligir-curso">3. Elegir Curso</option> -->
+      </select>
       <a id="link-curso" class="hide">Llevame al curso</a>
     </section>
     <script src="script.js"></script>
