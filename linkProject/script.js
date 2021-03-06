@@ -278,17 +278,18 @@ const fillSelect = function (selectElement, data, text) {
   Object.keys(data).forEach((item) => {
     let gradoOption = document.createElement("option");
     gradoOption.value = item;
-    gradoOption.text = item.charAt(0).toUpperCase() + item.slice(1);
+    gradoOption.text =
+      item.charAt(0).toUpperCase() +
+      item
+        .slice(1)
+        .split(/(?=[A-Z])/)
+        .join(" ")
+        .split(/(0*[1-9][0-9]*)/)
+        .join(" ");
 
-    for (i = 0; i < gradoOption.text.length; i++) {
-      console.log(gradoOption.text.length);
-      if (gradoOption.text[i] === /[A-Z]/) {
-        console.log(`${gradoOption.text[i]} is capital.`);
-      }
-    }
-    if (/[A-Z]/.test(gradoOption)) {
-      console.log("upper case true");
-    }
+    console.log(`gradeOption.text: ${gradoOption.text}`);
+
+    // Adds the selection as an "option" element to the drop down menu.
     selectElement.add(gradoOption);
   });
 };
