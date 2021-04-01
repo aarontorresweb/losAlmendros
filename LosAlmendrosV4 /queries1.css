@@ -1,0 +1,269 @@
+@media only screen and (min-width: 41.75em) {
+  .container {
+    transition: ease all 0.3s;
+  }
+
+  #logo {
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+
+  #logo.smaller {
+    padding-top: 0%;
+    width: 40%;
+    padding-bottom: 2.5%;
+  }
+
+  #content {
+    padding-top: 15%;
+  }
+
+  #reiniciar {
+    padding: 2.55%;
+    max-height: 75px;
+    max-width: 75px;
+  }
+
+  .choice {
+    margin: 2.5%;
+    width: 100%;
+    background-color: rgba(84, 44, 128, 1);
+    color: rgba(249, 251, 244, 1);
+    font-size: 1em;
+    line-height: 1em;
+    border-radius: 999px;
+    padding: 4%;
+  }
+
+  #choices {
+    width: 60%;
+    max-width: 200px;
+    min-width: 100px;
+    overflow: visible;
+    padding: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  #content select {
+    width: 45%;
+    max-width: 200px;
+    max-height: 95px;
+    min-width: 100px;
+    margin: 8%;
+    margin-top: 0%;
+    font-size: 1.2em;
+    line-height: 1.4em;
+  }
+
+  #link-curso {
+    padding: 3%;
+    margin: -4%;
+    margin-top: 5%;
+  }
+}
+
+@media only screen and (min-width: 64em) {
+  .container {
+    transition: ease all 0.3s;
+  }
+
+  #logo {
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 10%;
+    padding-bottom: 20%;
+  }
+
+  #logo.smaller {
+    padding-top: 10%;
+    width: 40%;
+    padding-bottom: 2.5%;
+  }
+
+  #content {
+    padding-top: 10%;
+  }
+
+  #reiniciar {
+    width: 5%;
+    min-width: 100px;
+    height: 5%;
+    min-height: 100px;
+    padding: 2%;
+  }
+
+  .choice {
+    margin: 2.5%;
+    width: 100%;
+    background-color: rgba(84, 44, 128, 1);
+    color: rgba(249, 251, 244, 1);
+    font-size: 1em;
+    line-height: 1em;
+    border-radius: 999px;
+    padding: 4%;
+  }
+
+  #choices {
+    width: 60%;
+    max-width: 300px;
+    min-width: 100px;
+    overflow: visible;
+    padding: 4%;
+    font-size: 1.4em;
+    line-height: 1.4em;
+  }
+
+  #content select {
+    width: 75%;
+    height: 2%;
+    padding: 1%;
+    margin: 1%;
+    font-size: 1.4em;
+    line-height: 1.6em;
+  }
+
+  #link-curso {
+    width: 25%;
+    padding: 1.5%;
+    margin-top: 1.8%;
+    font-size: 1.6em;
+    line-height: 1.2em;
+  }
+}
+
+@media only screen and (min-width: 64em) and (orientation: landscape) {
+  #logo {
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 5%;
+    padding-bottom: 2%;
+  }
+
+  #logo.smaller {
+    padding-top: 5%;
+    width: 30%;
+    padding-bottom: 0%;
+  }
+
+  #content {
+    padding-top: 2%;
+  }
+
+  #reiniciar {
+    margin: 0px 0px;
+    width: 5%;
+    min-width: 100px;
+    height: 5%;
+    min-height: 100px;
+    padding: 2%;
+    margin-top: 0%;
+  }
+
+  .choice {
+    padding: 2%;
+    width: 25%;
+  }
+
+  #choices {
+    margin-top: 0%;
+    padding: 2%;
+    width: 80%;
+    height: 1.5em;
+    max-width: 1000px;
+    font-size: 1.4em;
+    line-height: 1.4em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #content select {
+    width: 25%;
+    height: 2%;
+    padding: 1%;
+    margin: 1%;
+    font-size: 1.4em;
+    line-height: 1.6em;
+  }
+
+  #link-curso {
+    width: 25%;
+    padding: 1.5%;
+    margin-top: 1.8%;
+    font-size: 1.6em;
+    line-height: 1.2em;
+  }
+}
+
+@media only screen and (min-width: 82em) and (orientation: landscape) {
+  .container {
+    transition: ease all 0.3s;
+  }
+
+  #logo {
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 10%;
+    padding-bottom: 5%;
+  }
+  #logo.smaller {
+    padding-top: 5%;
+    width: 40%;
+    padding-bottom: 0%;
+  }
+  #content {
+    padding-top: 5%;
+  }
+  #reiniciar {
+    margin: 0px 0px;
+    width: 5%;
+    min-width: 100px;
+    height: 5%;
+    min-height: 100px;
+    padding: 2%;
+    margin-top: 0%;
+  }
+
+  .choice {
+    padding: 2%;
+    width: 25%;
+  }
+
+  #choices {
+    margin-top: 0%;
+    padding: 2%;
+    width: 80%;
+    height: 1.5em;
+    max-width: 1000px;
+    font-size: 1.4em;
+    line-height: 1.4em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #content select {
+    width: 25%;
+    height: 2%;
+    padding: 1%;
+    margin: 1%;
+    font-size: 1.4em;
+    line-height: 1.6em;
+  }
+
+  #link-curso {
+    width: 25%;
+    padding: 1.5%;
+    margin-top: 1.8%;
+    font-size: 1.6em;
+    line-height: 1.2em;
+  }
+}

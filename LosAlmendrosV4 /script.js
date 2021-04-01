@@ -4,262 +4,258 @@
 // These objects fill into the 3rd selector, on the right.
 // The link is then passed to the "Llevame al Curso" link 'a' HTML.
 
-const threeYearsClasses = {
-  tutora3años:
+const tresAñosClasses = {
+  Tutora:
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=65",
-  musica3años:
+  Música:
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=69",
-  inglés3años:
+  Inglés:
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=68",
-  religionCatólica3años:
+  "Religión Católica":
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=66",
-  religionEvangélico3años:
+  "Religión Evangélica":
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=67",
 };
 
-const fourYearsClasses = {
-  tutora3años:
-    "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=65",
-  musica3años:
-    "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=69",
-  ingles3años:
-    "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=68",
-  religionCatólica3años:
-    "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=66",
-  religionEvangélica3años:
-    "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=67",
+const cuatroAñosClasses = {
+  "Tutora 4A":
+    "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=70",
+  "Tutora 4B":
+    "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=75",
+  Inglés:
+    "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=151",
+  Música:
+    "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=147",
+  "Religión Católica":
+    "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=149",
+  "Religión Evangélica":
+    "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=150",
 };
 
-const fiveYearsClasses = {
-  tutora5añosA:
+const cincoAñosClasses = {
+  "Tutora 5A":
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=76",
-  tutora5añosB:
+  "Tutora 5B":
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=77",
-  musica5años:
+  Música:
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=152",
-  inglés5añosA:
+  "Inglés 5A":
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=78",
-  inglés5añosB:
+  "Inglés 5B":
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=79",
-  religionCatólica5años:
+  "Religión Católica":
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=154",
-  religionEvangélica5años:
+  "Religión Evangélica":
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=153",
 };
 
 const primeroClasses = {
-  lengua1:
+  Lengua:
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=155",
-  mates1A:
+  "Mates 1A":
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=85",
-  mates1B:
+  "Mates 1B":
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=86",
-  ingles1:
+  Inglés:
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=156",
-  cienciasNaturales1:
+  "Ciencias Naturales":
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=157",
-  scienciasSociales1:
+  "Ciencias Sociales":
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=158",
-  artes1:
+  Artes:
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=159",
-  educaciónFisica1:
+  "Educación Física":
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=161",
-  musica1:
+  Música:
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=160",
-  religionCatólica1:
+  "Religión Católica":
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=163",
-  religionEvangélica1:
+  "Religión Evangélica":
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=162",
-  valores1:
+  Valores:
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=202",
 };
 
 const segundoClasses = {
-  lengua2:
+  Lengua:
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=164",
-  mates2A:
+  "mates 2A":
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=96",
-  mates2B:
+  "mates 2B":
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=97",
-  ingles2:
+  Inglés:
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=165",
-  natSci2:
+  "Ciencias Naturales":
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=166",
-  socSci2:
+  "Ciencias Sociales":
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=167",
-  arts2:
+  Artes:
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=168",
-  eduFisica2:
+  "Educación Física":
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=169",
-  musica2:
+  Música:
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=170",
-  religionCat2:
+  "Religión Católica":
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=172",
-  religionEva2:
+  "Religión Evangélica":
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=171",
-  valores2:
+  Valores:
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=203",
 };
 
 const terceroClasses = {
-  lengua3:
+  Lengua:
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=173",
-  mates3A:
+  "Mates 3A":
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=108",
-  mates3B:
+  "Mates 3B":
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=109",
-  ingles3:
+  Inglés:
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=174",
-  natSci3:
+  "Ciencias Naturales 3":
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=175",
-  socSci3:
+  "Ciencias Sociales":
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=176",
-  arts3:
+  Artes:
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=177",
-  eduFisica3:
+  "Educación Física":
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=179",
-  musica3:
+  Música:
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=178",
-  religionCat3:
+  "Religión Católica":
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=181",
-  religionEva3:
+  "Religión Evangélica":
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=180",
-  valores3:
+  Valores:
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=204",
 };
 
-const quartoClasses = {
-  lengua4:
+const cuartoClasses = {
+  Lengua:
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/enrol/index.php?id=118",
-  mates4:
+  Mates:
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/enrol/index.php?id=117",
-  ingles4:
+  Inglés:
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/enrol/index.php?id=119",
-  natSci4:
+  "Ciencias Naturales":
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/enrol/index.php?id=121",
-  socSci4:
+  "Ciencias Sociales":
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/enrol/index.php?id=120",
-  arts4:
+  Artes:
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/enrol/index.php?id=126",
-  eduFisica4:
+  "Educación Física":
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=123",
-  musica4:
+  Música:
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=122",
-  religionCat4:
+  "Religión Católica":
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=124",
-  religionEva4:
+  "Religión Evangélica":
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=125",
-  valores4:
+  Valores:
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/enrol/index.php?id=205",
 };
 
 const quintoClasses = {
-  lengua4:
-    "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/enrol/index.php?id=118",
-  mates4:
-    "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/enrol/index.php?id=117",
-  ingles4:
-    "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/enrol/index.php?id=119",
-  natSci4:
-    "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/enrol/index.php?id=121",
-  socSci4:
-    "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/enrol/index.php?id=120",
-  arts4:
-    "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/enrol/index.php?id=126",
-  eduFisica4:
-    "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=123",
-  musica4:
-    "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=122",
-  religionCat4:
-    "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=124",
-  religionEva4:
-    "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=125",
-  valores4:
-    "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/enrol/index.php?id=205",
+  Lengua:
+    "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=127",
+  Mates:
+    "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=128",
+  Inglés:
+    "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=129",
+  "Ciencias Naturales":
+    "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=130",
+  "Ciencias Sociales":
+    "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=131",
+  Artes:
+    "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=132",
+  "Educación Física":
+    "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=133",
+  Música:
+    "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=134",
+  "Religión Católica":
+    "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=135",
+  "Religión Evangélica":
+    "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=136",
+  Valores:
+    "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=206",
 };
 
 const sextoClasses = {
-  lengua6:
+  Lengua:
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=137",
-  mates6:
+  Mates:
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=138",
-  ingles6:
+  Inglés:
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=139",
-  natSci6:
+  "Ciencias Naturales":
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=140",
-  socSci6:
+  "Ciencias Sociales":
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=141",
-  arts6:
+  Artes:
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=142",
-  eduFisica6:
+  "Educación Física":
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=143",
-  musica6:
+  Música:
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=144",
-  religionCat6:
+  "Religión Católica":
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=145",
-  religionEva6:
+  "Religión Evangélica":
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=146",
-  valores6:
+  Valores:
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=207",
 };
 
 const compTerceroClasses = {
-  compMates3:
+  "Comp. Mates":
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=183",
-  compLengua3:
+  "Comp. Lengua":
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=182",
 };
 
 const compCuartoClasses = {
-  compMates4:
+  "Comp. Mates":
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=185",
-  compLengua4:
+  "Comp. Lengua":
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=184",
 };
 
 const compQuintoClasses = {
-  compMates5:
+  "Comp. Mates":
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=187",
-  compLengua5:
+  "Comp. Lengua":
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=186",
 };
 
 const compSextoClasses = {
-  compMates6:
+  "Comp. Mates":
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/index.php?categoryid=26",
-  compLengua6:
+  "Comp. Lengua":
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=188",
 };
-
-// Element selectors.
-const seccionSelectElement = document.getElementById("seccion");
-const gradoSelectElement = document.getElementById("grado");
-const cursoSelectElement = document.getElementById("curso");
-const linkCurso = document.getElementById("link-curso");
 
 // Fill in the objects for each grade section.
 // These are selected by the 2nd selector, in the middle.
 // Then, the selection here is passed to the 3rd selector, on the right.
 const infantil = {
-  threeYears: threeYearsClasses,
-  fourYears: fourYearsClasses,
-  fiveYears: fiveYearsClasses,
+  "3 Años": tresAñosClasses,
+  "4 Años": cuatroAñosClasses,
+  "5 Años": cincoAñosClasses,
 };
 
 const primaria = {
-  primero: primeroClasses,
-  segundo: segundoClasses,
-  tercero: terceroClasses,
-  quarto: quartoClasses,
-  quinto: quintoClasses,
-  sexto: sextoClasses,
+  "1º Primero": primeroClasses,
+  "2º Segundo": segundoClasses,
+  "3º Tercero": terceroClasses,
+  "4º Cuarto": cuartoClasses,
+  "5º Quinto": quintoClasses,
+  "6º Sexto": sextoClasses,
 };
 
 const compensatoria = {
-  compTercero: compTerceroClasses,
-  compCuarto: compCuartoClasses,
-  compQuinto: compQuintoClasses,
-  compSexto: compSextoClasses,
+  "3º Tercero": compTerceroClasses,
+  "4º Cuarto": compCuartoClasses,
+  "5º Quinto": compQuintoClasses,
+  "6º Sexto": compSextoClasses,
 };
 
 // Fill in the object of the basic grades.
@@ -271,51 +267,101 @@ const secciones = {
   compensatoria: compensatoria,
 };
 
+// Element selectors.
+const seccionSelectElement = document.getElementById("seccion");
+const cursoSelectElement = document.getElementById("curso");
+const asignaturaSelectElement = document.getElementById("asignatura");
+const seccionChoiceElement = document.getElementById("seccion-choice");
+const cursoChoiceElement = document.getElementById("curso-choice");
+const asignaturaChoiceElement = document.getElementById("asignatura-choice");
+const linkCurso = document.getElementById("link-curso");
+const logo = document.getElementById("logo");
+const reiniciar = document.getElementById("reiniciar");
+
 // Function to dynamically display all the courses in the selectors.
 const fillSelect = function (selectElement, data, text) {
   selectElement.innerHTML = " "; // Clears the input field.
-  selectElement.innerHTML = `<option value="elegir-seccion">${text}</option>`; // Adds the default HTML
+  selectElement.innerHTML = `<option selected value="elegir-seccion" disabled>${text}</option>`; // Adds the default HTML
   Object.keys(data).forEach((item) => {
     let gradoOption = document.createElement("option");
     gradoOption.value = item;
     gradoOption.text = item.charAt(0).toUpperCase() + item.slice(1);
+
+    console.log(`gradeOption.text: ${gradoOption.text}`);
+
+    // Adds the selection as an "option" element to the drop down menu.
     selectElement.add(gradoOption);
   });
 };
 
 // Event listeners.
-
 // This is auto loaded when the page loads and fills the first selector.
 document.addEventListener("DOMContentLoaded", function (event) {
-  fillSelect(seccionSelectElement, secciones, "1. Elegir Sección");
+  fillSelect(seccionSelectElement, secciones, "Elegir Sección");
+  seccionSelectElement.classList.remove("hide");
 });
 
 // This is the event listener for the first selector, on the left.
 // It passes its selection data to the second selector, in the middle.
 seccionSelectElement.addEventListener("change", function (event) {
-  fillSelect(
-    gradoSelectElement,
-    secciones[event.target.value],
-    "2. Elegir Grado"
-  );
+  fillSelect(cursoSelectElement, secciones[event.target.value], "Elegir Curso");
+  seccionChoiceElement.innerText =
+    event.target.value.charAt(0).toUpperCase() + event.target.value.slice(1);
+  seccionChoiceElement.classList.remove("hide");
+  seccionSelectElement.classList.add("hide");
+  cursoSelectElement.classList.remove("hide");
+  reiniciar.classList.remove("hide");
+  logo.classList.add("smaller");
 });
 
 // This is the event listener for the second selector, in the middle.
 // It passes its selection data to the third selector, on the right.
-gradoSelectElement.addEventListener("change", function (event) {
+cursoSelectElement.addEventListener("change", function (event) {
   fillSelect(
-    cursoSelectElement,
+    asignaturaSelectElement,
     secciones[seccionSelectElement.value][event.target.value],
-    "3. Elegir Curso"
+    "Elegir Asignatura"
   );
+  cursoChoiceElement.innerText =
+    event.target.value.charAt(0).toUpperCase() + event.target.value.slice(1);
+  cursoChoiceElement.classList.remove("hide");
+  cursoSelectElement.classList.add("hide");
+  asignaturaSelectElement.classList.remove("hide");
 });
 
 // This is the event listener for the third selector, on the right.
 // It passes its selection data to the link a href.
 // This is the element we click to go to the webpage link.
-cursoSelectElement.addEventListener("change", function (event) {
+asignaturaSelectElement.addEventListener("change", function (event) {
   linkCurso.href =
-    secciones[seccionSelectElement.value][gradoSelectElement.value][
+    secciones[seccionSelectElement.value][cursoSelectElement.value][
       event.target.value
     ];
+  linkCurso.removeAttribute("class");
+  asignaturaChoiceElement.innerText =
+    event.target.value.charAt(0).toUpperCase() + event.target.value.slice(1);
+  asignaturaChoiceElement.classList.remove("hide");
+  asignaturaSelectElement.classList.add("hide");
+});
+
+reiniciar.addEventListener("click", function (event) {
+  // 1. Clear the HTML "choices" div elements.
+  seccionChoiceElement.innerHTML = " ";
+  seccionChoiceElement.classList.add("hide");
+  cursoChoiceElement.innerHTML = " ";
+  cursoChoiceElement.classList.add("hide");
+  asignaturaChoiceElement.innerHTML = " ";
+  asignaturaChoiceElement.classList.add("hide");
+  // 2. Clear the extra select elements that might be on the page.
+  seccionSelectElement.classList.add("hide");
+  cursoSelectElement.classList.add("hide");
+  asignaturaSelectElement.classList.add("hide");
+  // 3. Hide the link and the reset button.
+  linkCurso.classList.add("hide");
+  reiniciar.classList.add("hide");
+  // 4. Resize the logo.
+  logo.classList.remove("smaller");
+  // 5. Reset the initial state.
+  fillSelect(seccionSelectElement, secciones, "Elegir Sección");
+  seccionSelectElement.classList.remove("hide");
 });

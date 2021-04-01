@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Los Almendros</title>
+    <meta
+      name="Link Generator Los Almendros"
+      content="Link Generator Los Almendros"
+    />
+    <meta
+      name="Aaron Torres and Joe Poisson"
+      content="Link Generator Los Almendros"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="https://use.typekit.net/szh1wqk.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="queries1.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <section id="content">
+        <header>
+          <img id="logo" src="logo.png" alt="logo" />
+        </header>
+        <img id="reiniciar" src="reiniciar.png" class="choice hide" />
+        <div id="choices">
+          <p id="seccion-choice" class="choice hide"></p>
+          <p id="curso-choice" class="choice hide"></p>
+          <p id="asignatura-choice" class="choice hide"></p>
+        </div>
+        <select class="btn" name="seccion" id="seccion"></select>
+        <select class="btn hide" name="curso" id="curso"></select>
+        <select class="btn hide" name="asignatura" id="asignatura"></select>
+        <a id="link-curso" class="btn hide" target="_blank">Llévame al Curso</a>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

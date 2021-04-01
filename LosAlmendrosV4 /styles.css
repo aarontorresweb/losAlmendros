@@ -1,0 +1,134 @@
+/* CSS goes here. 😂😂😂 */
+
+body {
+  /* background: linear-gradient(90deg, rgb(56, 124, 29), rgb(79, 177, 40)); */
+  background-color: rgb(88, 203, 43, 1);
+  font-family: sofia-pro-soft, Montserrat, sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  margin: 0px auto;
+  padding: 0;
+}
+
+#logo {
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 20%;
+  padding-bottom: 20%;
+  transition: all 0.2s linear;
+}
+
+#logo.smaller {
+  padding-top: 8%;
+  width: 40%;
+  padding-bottom: 2.5%;
+}
+
+#content {
+  margin: 0% 0%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 10%;
+}
+#reiniciar {
+  display: block;
+  height: 20%;
+  max-height: 75px;
+  width: 20%;
+  max-width: 75px;
+  padding: 3%;
+  background-color: transparent;
+  filter: drop-shadow(2px 4px 2px rgba(132, 153, 116, 0.4));
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.choice {
+  margin: 2.5%;
+  width: 100%;
+  background-color: rgba(84, 44, 128, 1);
+  color: rgba(249, 251, 244, 1);
+  font-size: 1em;
+  line-height: 1em;
+  border-radius: 999px;
+  padding: 4%;
+}
+
+#choices {
+  width: 60%;
+  max-width: 200px;
+  min-width: 100px;
+  overflow: visible;
+  padding: 4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#content select {
+  font-family: sofia-pro-soft, Montserrat, sans-serif;
+  width: 65%;
+  max-width: 200px;
+  max-height: 75px;
+  min-width: 100px;
+  padding: 3%;
+  margin: -1%;
+  border-radius: 999px;
+  color: rgba(84, 44, 129, 1);
+  border: none;
+  background-color: rgba(254, 255, 41, 1);
+  filter: drop-shadow(2px 4px 2px rgba(132, 153, 116, 0.4));
+  font-size: 1.2em;
+  line-height: 1.4em;
+  text-align-last: center;
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+.hide {
+  display: none !important;
+}
+
+.choice-hide {
+  margin-left: auto;
+  margin-right: auto;
+  width: 8em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#link-curso {
+  display: block;
+  width: 70%;
+  max-width: 250px;
+  min-width: 100px;
+  min-height: 10%;
+  padding: 3%;
+  margin: 4%;
+  margin-top: 5%;
+  border-radius: 65px;
+  background-color: rgba(254, 255, 41, 1);
+  filter: drop-shadow(2px 4px 2px rgba(132, 153, 116, 0.4));
+  font-size: 1.2em;
+  line-height: 1em;
+  text-align: center;
+  text-decoration: none;
+  color: rgba(84, 44, 128, 1);
+  transition: 0.5s;
+}
+
+/* #link-curso:hover {
+  opacity: 0.5;
+  width: 375px;
+} */
