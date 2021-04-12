@@ -14,9 +14,9 @@ body {
 }
 
 #logo {
-  width: 70%;
+  width: 65%;
   margin: 0 auto;
-  padding-top: 20%;
+  padding-top: 7%;
   padding-bottom: 20%;
   transition: all 0.2s linear;
 }
@@ -37,6 +37,7 @@ body {
   text-align: center;
   padding-top: 10%;
 }
+
 #reiniciar {
   display: block;
   height: 20%;
@@ -76,12 +77,12 @@ body {
 
 #content select {
   font-family: sofia-pro-soft, Montserrat, sans-serif;
-  width: 65%;
+  width: 85%;
   max-width: 200px;
   max-height: 75px;
   min-width: 100px;
   padding: 3%;
-  margin: -1%;
+  margin: -2%;
   border-radius: 999px;
   color: rgba(84, 44, 129, 1);
   border: none;
