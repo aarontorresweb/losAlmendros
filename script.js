@@ -181,6 +181,8 @@ const quintoClasses = {
 };
 
 const sextoClasses = {
+  "Sexto Lengua y Mates":
+    "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=57",
   Lengua:
     "https://aulavirtual35.educa.madrid.org/cp.losalmendros.madrid/course/view.php?id=137",
   Mates:
